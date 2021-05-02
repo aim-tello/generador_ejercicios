@@ -2,3 +2,5 @@ numpy~=1.20.2
 PyLaTeX~=1.4.1
 marshmallow~=3.11.1
 Flask~=1.1.2
+flask-marshmallow==0.14.0
+Flask-RESTful==0.3.8

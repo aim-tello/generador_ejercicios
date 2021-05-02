@@ -2,8 +2,6 @@ from flask_restful import Resource
 from flask import request, jsonify
 from model.operaciones_request import SolicitudOperacion
 from service.genera_seccion_restas_aritmeticas import GeneraRestas as gr
-import json
-from model.aritmetica_restas import RestaAritmeticaEncoder
 
 solicitud_operacion = SolicitudOperacion()
 
