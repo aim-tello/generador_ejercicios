@@ -1,5 +1,7 @@
 import numpy as np
 import random
+from json import JSONEncoder
+
 
 class RestaAritmetica:
 
@@ -23,6 +25,11 @@ class RestaAritmetica:
 
     def __str__(self):
         return self.suma
+
+
+class RestaAritmeticaEncoder(JSONEncoder):
+    def default(self, o):
+        return o.__dict__
 
 
 if __name__ == '__main__':

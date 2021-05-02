@@ -9,6 +9,7 @@ class GeneraRestas:
         for num_eje in range(self.cantidad_restas):
             self.ejercicios.append(
                 ra(sumandos=sumandos, limite_inferior=limite_inferior, limite_superior=limite_superior))
+        self.ejercicios_str = {i: self.ejercicios[i].suma for i in range(0, len(self.ejercicios))}
 
     def __str__(self):
         return 'Ejercicios : \n' + '\n'.join([ejer.__str__() for ejer in self.ejercicios])
