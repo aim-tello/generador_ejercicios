@@ -14,4 +14,4 @@ class RestasEndpoint(Resource):
                               sumandos=solicitud_dict['sumandos'],
                               limite_superior=solicitud_dict['limite_superior'],
                               limite_inferior=solicitud_dict['limite_inferior'])
-        return jsonify(ejercicios = ejercicios_resta.ejercicios_str)
+        return jsonify(ejercicios=ejercicios_resta.ejercicios_str)
